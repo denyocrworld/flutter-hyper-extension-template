@@ -42,3 +42,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# "JSON to Dart Model" generator tracker files locations.
+/.json_models/
+models.jsonc
