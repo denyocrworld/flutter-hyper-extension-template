@@ -1,7 +1,18 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#62030F",
-        "titleBar.activeBackground": "#890416",
-        "titleBar.activeForeground": "#FFFBFC"
-    }
+  "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true
+      },
+      "editor.formatOnType": true,
+      "editor.rulers": [
+          80
+      ],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false,
+      "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
 }
