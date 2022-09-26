@@ -33,10 +33,10 @@ class Get {
   }
 }
 
-extension ChangeNotifierExtension on ChangeNotifier {
+extension ChangeNotifierExtension on State {
   update() {
     // ignore: invalid_use_of_visible_for_testing_member, unnecessary_this, invalid_use_of_protected_member
-    this.notifyListeners();
+    this.setState(() {});
   }
 }
 
