@@ -1,0 +1,16 @@
+export 'package:fhe_template/module/contoh/controller/contoh_controller.dart';
+export 'package:fhe_template/module/contoh/view/contoh_view.dart';
+export 'package:fhe_template/module/demo/controller/demo_controller.dart';
+export 'package:fhe_template/module/demo/view/demo_view.dart';
+export 'package:fhe_template/module/product_form/controller/product_form_controller.dart';
+export 'package:fhe_template/module/product_form/view/product_form_view.dart';
+export 'package:fhe_template/module/product_list/controller/product_list_controller.dart';
+export 'package:fhe_template/module/product_list/view/product_list_view.dart';
+export 'package:fhe_template/module/_ui_kit/uk_course/controller/uk_course_controller.dart';
+export 'package:fhe_template/module/_ui_kit/uk_course/view/uk_course_view.dart';
+export 'package:fhe_template/module/_ui_kit/uk_dashboard/controller/uk_dashboard_controller.dart';
+export 'package:fhe_template/module/_ui_kit/uk_dashboard/view/uk_dashboard_view.dart';
+export 'package:fhe_template/module/_ui_kit/uk_main_navigation/controller/uk_main_navigation_controller.dart';
+export 'package:fhe_template/module/_ui_kit/uk_main_navigation/view/uk_main_navigation_view.dart';
+export 'package:fhe_template/module/_ui_kit/uk_profile/controller/uk_profile_controller.dart';
+export 'package:fhe_template/module/_ui_kit/uk_profile/view/uk_profile_view.dart';

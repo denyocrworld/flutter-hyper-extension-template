@@ -45,7 +45,7 @@ class _QNumberFieldState extends State<QNumberField> {
           ),
           helperText: widget.helperText,
         ),
-        keyboardType: const TextInputType.numberWithOptions(),
+        keyboardType: TextInputType.number,
         onChanged: (value) {
           if (widget.onChanged != null) widget.onChanged!(value);
         },

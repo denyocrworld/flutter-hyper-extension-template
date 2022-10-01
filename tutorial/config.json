@@ -1,5 +1,9 @@
 {
     "modules": [
-        "demo"
+        "_ui_kit/uk_main_navigation",
+        "_ui_kit/uk_dashboard",
+        "_ui_kit/uk_course",
+        "_ui_kit/uk_profile",
+        "contoh"
     ]
 }

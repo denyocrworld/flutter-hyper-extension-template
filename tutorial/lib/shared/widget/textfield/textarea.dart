@@ -33,7 +33,7 @@ class _QTextAreaState extends State<QTextArea> {
       child: TextFormField(
         initialValue: widget.value,
         maxLength: 200,
-        maxLines: 6,
+        maxLines: 4,
         decoration: InputDecoration(
           labelText: widget.label,
           labelStyle: const TextStyle(

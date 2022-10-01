@@ -1,0 +1,15 @@
+{
+    "modules": [
+        "welcome",
+        "main_navigation",
+        "dashboard",
+        "product_detail",
+        "dev_home",
+        "profile",
+        "product_list",
+        "product_form",
+        "cart",
+        "order_list",
+        "checkout"
+    ]
+}
