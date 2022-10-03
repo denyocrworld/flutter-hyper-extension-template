@@ -51,6 +51,158 @@ class WelcomeView extends StatefulWidget {
                       color: Colors.white,
                     ),
                   ),
+                  Container(
+                    padding: const EdgeInsets.all(30.0),
+                    color: Colors.white,
+                    child: SizedBox(
+                      height: 100,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(13),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0x19000000),
+                                  blurRadius: 24,
+                                  offset: Offset(0, 11),
+                                ),
+                              ],
+                              color: Colors.white,
+                            ),
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                              right: 14,
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                SizedBox(
+                                  width: 80,
+                                  height: 80,
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        width: 80,
+                                        height: 80,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0xff666666),
+                                        ),
+                                      ),
+                                      const Positioned.fill(
+                                        child: Align(
+                                          alignment: Alignment.bottomLeft,
+                                          child: SizedBox(
+                                            width: 140,
+                                            height: 197,
+                                            child: FlutterLogo(size: 140),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Card(
+                                  child: ListTile(
+                                    leading: CircleAvatar(
+                                      backgroundColor: Colors.grey[200],
+                                      backgroundImage: const NetworkImage(
+                                        "https://i.ibb.co/QrTHd59/woman.jpg",
+                                      ),
+                                    ),
+                                    title: const Text("Jessica Doe"),
+                                    subtitle: const Text("Programmer"),
+                                  ),
+                                ),
+                                const SizedBox(width: 34),
+                                SizedBox(
+                                  width: 102,
+                                  height: 78,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 56,
+                                        top: 224,
+                                        child: Container(
+                                          width: 9,
+                                          height: 9,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                              color: const Color(0xffcccccc),
+                                              width: 1,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      const Text(
+                                        "Roller Rabbit \nVado Odelle Dress\nQuality: 1\nSize: L\nColor: ",
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 34),
+                                const Text(
+                                  "\$198.00",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30.0,
+                  ),
+                  Container(
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "User Name",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const Text(
+                          "Hasan Mahmud",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Container(
+                          width: 13,
+                          height: 13,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.black,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 325,
+                          height: 1,
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(
                     height: 30.0,
                   ),
