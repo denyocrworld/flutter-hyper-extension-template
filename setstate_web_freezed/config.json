@@ -1,0 +1,13 @@
+{
+    "modules": [
+        "auth/login",
+        "main_navigation",
+        "dashboard",
+        "product_list",
+        "customer_list",
+        "order_list",
+        "report",
+        "profile",
+        "setting"
+    ]
+}
