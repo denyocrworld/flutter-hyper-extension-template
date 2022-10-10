@@ -1,3 +1,4 @@
+import 'package:fhe_template/riverpod_util.dart';
 import 'package:fhe_template/setup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ void main() async {
   runApp(
     ProviderScope(
       child: MaterialApp(
+        navigatorKey: Get.navigatorKey,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blueGrey,
