@@ -14,7 +14,7 @@ void main() async {
 }
 
 /*
-TODO: How to change icon:
+? How to change icon:
 1. Add image to assets/icon/icon.png
 2. Run this command:
   
