@@ -5,19 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Flutter Android",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
             "name": "Flutter Web",
             "request": "launch",
             "type": "dart",
             "args": [
                 "-d",
                 "chrome",
-                "--web-port=8000"
+                "--web-port",
+                "8000"
             ],
-        },
-        {
-            "name": "Flutter Android",
-            "request": "launch",
-            "type": "dart"
         },
         {
             "name": "blank_fire_setstate (profile mode)",
