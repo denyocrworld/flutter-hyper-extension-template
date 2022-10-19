@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Flutter Android",
+            "name": "Flutter",
             "request": "launch",
             "type": "dart"
         },
@@ -19,18 +19,6 @@
                 "--web-port",
                 "8000"
             ],
-        },
-        {
-            "name": "blank_fire_setstate (profile mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "blank_fire_setstate (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
         }
     ]
 }
