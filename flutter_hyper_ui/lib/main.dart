@@ -6,7 +6,7 @@ void main() async {
   await initialize();
 
   runApp(MaterialApp(
-    title: 'Capek Ngoding',
+    title: 'Example',
     debugShowCheckedModeBanner: false,
     theme: getDefaultTheme(),
     home: Container(),
