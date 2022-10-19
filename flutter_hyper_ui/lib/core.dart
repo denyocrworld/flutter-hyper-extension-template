@@ -10,7 +10,6 @@ export 'package:example/shared/util/format/format.dart';
 export 'package:example/shared/util/input/input.dart';
 export 'package:example/shared/util/responsive/responsive.dart';
 export 'package:example/shared/util/url_launcher/url_launcher.dart';
-export 'package:example/shared/widget/button/button.dart';
 export 'package:example/shared/widget/checkbox/checkbox.dart';
 export 'package:example/shared/widget/combo/combo.dart';
 export 'package:example/shared/widget/datepicker/datepicker.dart';

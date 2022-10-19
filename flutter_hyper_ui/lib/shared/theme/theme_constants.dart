@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 var primaryColor = Colors.blueGrey[800];
 var secondaryColor = const Color(0xFF2A2D3E);
@@ -10,22 +11,20 @@ var successColor = Colors.green[300];
 var infoColor = Colors.blue[300];
 var warningColor = Colors.orange[300];
 var disabledColor = Colors.grey[300];
-
 var disabledTextColor = Colors.grey[800];
 
-//--------
-var loginBackgroundColor = Colors.blueGrey[400];
+//Text
+Color fontColor = Colors.grey[700]!;
 
-List<BoxShadow> shadowList = [
-  BoxShadow(
-    color: Colors.grey[400]!,
-    blurRadius: 30,
-    offset: const Offset(0, 10),
-  )
-];
+//Color
+Color appbarBackgroundColor = Colors.white;
+Color scaffoldBackgroundColor = Colors.grey[300]!;
+MaterialColor primarySwatch = Colors.blueGrey;
+TextStyle googleFont = GoogleFonts.sora();
+Color drawerBackgroundColor = const Color(0xff404E67);
 
-const double xs = 28;
-const double sm = 38;
-const double md = 50;
-const double lg = 60;
-const double xl = 70;
+//drawer
+Color drawerFontColor = Colors.grey[300]!;
+
+double cardElevation = 0.8;
+double cardBorderRadius = 24.0;

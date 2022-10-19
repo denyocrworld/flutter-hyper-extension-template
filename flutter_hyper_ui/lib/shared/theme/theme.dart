@@ -1,30 +1,12 @@
+import 'package:example/shared/theme/theme_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-class MainTheme {
-  //Text
-  static Color fontColor = Colors.grey[700]!;
-
-  //Color
-  static Color appbarBackgroundColor = Colors.white;
-  static Color primaryColor = Colors.blueGrey;
-  static Color scaffoldBackgroundColor = Colors.grey[300]!;
-  static MaterialColor primarySwatch = Colors.blueGrey;
-  static TextStyle googleFont = GoogleFonts.sora();
-  static Color drawerBackgroundColor = const Color(0xff404E67);
-
-  //drawer
-  static Color drawerFontColor = Colors.grey[300]!;
-
-  static double cardElevation = 0.8;
-  static double cardBorderRadius = 24.0;
-}
 
 ThemeData getDefaultTheme() {
   return ThemeData(
     // primarySwatch:  Color(0xffFA533C),
-    primaryColor: MainTheme.primaryColor,
-    primarySwatch: MainTheme.primarySwatch,
+    primaryColor: primaryColor,
+    primarySwatch: primarySwatch,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         shape: ContinuousRectangleBorder(
@@ -34,7 +16,7 @@ ThemeData getDefaultTheme() {
       ),
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: MainTheme.appbarBackgroundColor,
+      backgroundColor: appbarBackgroundColor,
       elevation: 0.6,
       titleTextStyle: GoogleFonts.montserrat(
         color: Colors.blueGrey[700],
@@ -44,26 +26,26 @@ ThemeData getDefaultTheme() {
         color: Colors.blueGrey[700],
       ),
     ),
-    scaffoldBackgroundColor: MainTheme.scaffoldBackgroundColor,
+    scaffoldBackgroundColor: scaffoldBackgroundColor,
     drawerTheme: DrawerThemeData(
-      backgroundColor: MainTheme.drawerBackgroundColor,
+      backgroundColor: drawerBackgroundColor,
     ),
     iconTheme: IconThemeData(
-      color: MainTheme.fontColor,
+      color: fontColor,
     ),
     textTheme: TextTheme(
-      bodyText1: MainTheme.googleFont.copyWith(color: MainTheme.fontColor),
-      bodyText2: MainTheme.googleFont.copyWith(color: MainTheme.fontColor),
+      bodyText1: googleFont.copyWith(color: fontColor),
+      bodyText2: googleFont.copyWith(color: fontColor),
     ),
     cardTheme: CardTheme(
-      elevation: MainTheme.cardElevation,
+      elevation: cardElevation,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(MainTheme.cardBorderRadius),
+        borderRadius: BorderRadius.circular(cardBorderRadius),
       ),
     ),
     chipTheme: const ChipThemeData(),
     tabBarTheme: TabBarTheme(
-      labelColor: MainTheme.fontColor,
+      labelColor: fontColor,
     ),
   );
 }
