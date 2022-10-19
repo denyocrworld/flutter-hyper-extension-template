@@ -3,8 +3,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 
-class DragonList extends StatefulWidget {
-  static Map<String, DragonListState> instance = {};
+class ExListView extends StatefulWidget {
+  static Map<String, ExListViewState> instance = {};
   final String? id;
   final Function(int page) futureBuilder;
   final double? height;
@@ -13,6 +13,7 @@ class DragonList extends StatefulWidget {
   final Color? color;
   final Axis? scrollDirection;
   final bool wrapMode;
+  final bool shrinkWrap;
   final double? bottomMargin;
 
   static reloadAll() async {
@@ -22,7 +23,7 @@ class DragonList extends StatefulWidget {
   }
 
   final Function(int, Map) builder;
-  const DragonList({
+  const ExListView({
     this.id,
     required this.builder,
     required this.futureBuilder,
@@ -32,15 +33,16 @@ class DragonList extends StatefulWidget {
     this.color,
     this.scrollDirection,
     this.wrapMode = false,
+    this.shrinkWrap = false,
     this.bottomMargin,
     Key? key,
   }) : super(key: key);
 
   @override
-  State<DragonList> createState() => DragonListState();
+  State<ExListView> createState() => ExListViewState();
 }
 
-class DragonListState extends State<DragonList> {
+class ExListViewState extends State<ExListView> {
   bool loading = true;
   bool bottomLoading = false;
   Response? response;
@@ -112,7 +114,7 @@ class DragonListState extends State<DragonList> {
   void initState() {
     super.initState();
     id = widget.id ?? const Uuid().v4();
-    DragonList.instance[id] = this;
+    ExListView.instance[id] = this;
     initScrollController();
     onLoading();
   }
@@ -120,7 +122,7 @@ class DragonListState extends State<DragonList> {
   @override
   void dispose() {
     super.dispose();
-    DragonList.instance.remove(id);
+    ExListView.instance.remove(id);
     onLoading();
   }
 
@@ -237,6 +239,7 @@ class DragonListState extends State<DragonList> {
           child: ListView.builder(
             controller: scrollController,
             itemCount: items.length,
+            shrinkWrap: widget.shrinkWrap,
             scrollDirection: widget.scrollDirection ?? Axis.vertical,
             itemBuilder: (context, index) {
               Map item = (items[index] as Map);
