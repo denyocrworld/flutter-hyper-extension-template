@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 ThemeData getDefaultTheme() {
   return ThemeData(
-    // primarySwatch:  Color(0xffFA533C),
     primaryColor: primaryColor,
     primarySwatch: primarySwatch,
     elevatedButtonTheme: ElevatedButtonThemeData(
