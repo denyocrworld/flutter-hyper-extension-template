@@ -16,7 +16,7 @@ void main() async {
     title: 'Example',
     debugShowCheckedModeBanner: false,
     // theme: ThemeService.mainTheme,
-    home: const DemoView(),
+    home: const DashboardView(),
     // home: const DemoView(),
   ));
 }
