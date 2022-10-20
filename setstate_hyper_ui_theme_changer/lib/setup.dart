@@ -1,0 +1,48 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:example/shared/util/common/platform.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+/*
+TODO: 
+Run this command if you don't already have firebase_options.dart
+flutterfire configure
+Docs: https://firebase.flutter.dev/docs/cli/
+*/
+import 'firebase_options.dart';
+
+Future initialize() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (isWindows) return;
+
+  await Firebase.initializeApp(
+    //run > flutterfire configure
+    //and import DefaultFirebaseOptions!
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  await FirebaseAuth.instance.wait();
+}
+
+extension FirebaseAuthExtension on FirebaseAuth {
+  wait() async {
+    bool ready = false;
+    FirebaseAuth.instance.authStateChanges().listen((event) {
+      ready = true;
+    });
+
+    while (ready == false) {
+      await Future.delayed(const Duration(milliseconds: 250));
+    }
+  }
+}
+
+deleteAll(collectionName) async {
+  var snapshot =
+      await FirebaseFirestore.instance.collection(collectionName).get();
+  for (var i = 0; i < snapshot.docs.length; i++) {
+    await FirebaseFirestore.instance
+        .collection(collectionName)
+        .doc(snapshot.docs[i].id)
+        .delete();
+  }
+}
