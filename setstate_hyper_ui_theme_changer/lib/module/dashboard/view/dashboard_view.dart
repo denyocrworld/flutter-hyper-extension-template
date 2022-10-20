@@ -1,5 +1,4 @@
 import 'package:example/core.dart';
-import 'package:example/service/theme_service.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatefulWidget {
@@ -20,6 +19,53 @@ class DashboardView extends StatefulWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    /*
+                    Kekurangan bikin Widget
+                    pakai Extension Method
+                    1. Agak sulit kalau mau di custom dengan UI yang berubah ubah
+                    2. Readability menurun
+                    3. Kehilangan fitur untuk lifecycle widget-nya
+                        -> initState
+                        -> dispose
+
+                    Kelebihannya
+                    1. Bisa memotong tab indentation
+
+                    Best Practices
+                    1. Pakai utk widget2 sederhana aja
+                    2. Jangan pakai utk complex widget, takut-nya
+                    Malah susah modif
+                    */
+                    "Form".h1,
+                    "Form".h2,
+                    "Form".h3,
+                    "Form".h4,
+                    "Form".h5,
+                    "Form".h6,
+                    const ExImagePicker(
+                      id: "photo",
+                      label: "Photo",
+                      // value: "https://i.ibb.co/PGv8ZzG/me.jpg",
+                    ),
+                    const ExTextField(
+                      id: "first_name",
+                      label: "First Name",
+                      value: null,
+                    ),
+                    const ExLocationPicker(
+                      id: "location",
+                      label: "Location",
+                      latitude: -6.218481065235333,
+                      longitude: 106.80254435779423,
+                    ),
+                  ],
+                ).p20.card,
+                const SizedBox(
+                  height: 2.0,
+                ),
                 Row(
                   children: [
                     Expanded(

@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:example/core.dart';
-import 'package:example/service/theme_service.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
@@ -13,10 +12,12 @@ void main() async {
   await ThemeService.loadTheme();
 
   runApp(MaterialApp(
+    navigatorKey: Get.navigatorKey,
     title: 'Example',
     debugShowCheckedModeBanner: false,
-    theme: ThemeService.mainTheme,
-    home: const DashboardView(),
+    // theme: ThemeService.mainTheme,
+    home: const DemoView(),
+    // home: const DemoView(),
   ));
 }
 

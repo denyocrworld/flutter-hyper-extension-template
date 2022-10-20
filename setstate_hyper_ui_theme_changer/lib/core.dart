@@ -5,6 +5,9 @@ it means you have to rename it to something more unique.
 */
 export 'package:example/module/dashboard/controller/dashboard_controller.dart';
 export 'package:example/module/dashboard/view/dashboard_view.dart';
+export 'package:example/module/demo/controller/demo_controller.dart';
+export 'package:example/module/demo/view/demo_view.dart';
+export 'package:example/service/theme_service.dart';
 export 'package:example/shared/theme/theme.dart';
 export 'package:example/shared/theme/theme_constants.dart';
 export 'package:example/shared/util/common/platform.dart';
