@@ -40,6 +40,8 @@ dependencies:
   hive: ^2.2.3
 
 dependency_overrides:
+  # Fix google_sign_in_web issue(s) on Windows/Android
+  # Uncomment if your are in the web version 
   google_sign_in_web:
     path: ./google_sign_in_web/
 
