@@ -12,7 +12,6 @@ export 'package:example/module/main_navigation/view/main_navigation_view.dart';
 export 'package:example/module/profile/controller/profile_controller.dart';
 export 'package:example/module/profile/view/profile_view.dart';
 export 'package:example/shared/theme/theme.dart';
-export 'package:example/shared/theme/theme_constants.dart';
 export 'package:example/shared/util/focus_helper/focus_helper.dart';
 export 'package:example/shared/util/format/format.dart';
 export 'package:example/shared/util/input/input.dart';

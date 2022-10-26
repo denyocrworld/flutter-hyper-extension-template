@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 void main() async {
   await initialize();
 
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     title: 'Example',
     debugShowCheckedModeBanner: false,
-    // theme: getDefaultTheme(),
+    theme: getDarkTheme(),
     home: DashboardView(),
   ));
 }

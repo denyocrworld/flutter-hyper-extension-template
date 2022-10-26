@@ -70,6 +70,13 @@ class _ExTextFieldState extends State<ExTextField>
     Input.set(widget.id, "");
   }
 
+  /*
+  Flutter itu lebih cepat daripada React Native
+  - Aplikasi Android & IOS
+
+  Tapi kalau untuk Web,
+  - Flutter masih kalah jauh dengan React
+  */
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -83,6 +90,7 @@ class _ExTextFieldState extends State<ExTextField>
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           if (widget.label != null) ...[
+            // <button id="test" label="test" readonly="readonly"/>
             Padding(
               padding: const EdgeInsets.only(
                 left: 4.0,
