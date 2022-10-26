@@ -1,6 +1,7 @@
 import 'package:example/core.dart';
 import 'package:example/shared/widget/demo/q_textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 
 class DashboardView extends StatefulWidget {
   DashboardView({Key? key}) : super(key: key);
@@ -22,6 +23,12 @@ class DashboardView extends StatefulWidget {
     - Reuseable Widget di level Module
     - Reuseable Widget di leve Global
     */
+
+    //get
+    getProduct() {}
+    ambilCustomer() {}
+    fetchUsers() {}
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dashboard"),
