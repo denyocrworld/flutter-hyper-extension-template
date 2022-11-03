@@ -1,0 +1,7 @@
+include: package:lints/recommended.yaml
+
+linter:
+  rules:
+    - use_function_type_syntax_for_parameters: false
+    - prefer_const_constructors
+    - require_trailing_commas

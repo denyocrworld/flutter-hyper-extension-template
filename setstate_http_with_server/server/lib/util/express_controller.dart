@@ -1,0 +1,3 @@
+class ExpressController {
+  const ExpressController();
+}
