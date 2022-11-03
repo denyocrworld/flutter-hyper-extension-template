@@ -1,0 +1,9 @@
+{
+    "modules": [
+        "login",
+        "dashboard",
+        "dashboard_http_from_controller",
+        "product_list",
+        "product_form"
+    ]
+}
