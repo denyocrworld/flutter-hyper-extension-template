@@ -15,7 +15,6 @@ dependencies:
   firebase_auth: ^3.10.0
   firebase_messaging: ^13.0.3
   cloud_firestore: ^3.4.9
-  google_sign_in: ^5.4.2
   intl: ^0.17.0
   google_fonts: ^3.0.1
   material_design_icons_flutter: ^5.0.6996

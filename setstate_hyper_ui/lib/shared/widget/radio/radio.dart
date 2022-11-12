@@ -97,6 +97,7 @@ class _ExRadioState extends State<ExRadio> implements InputControlState {
                 return InkWell(
                   onTap: () {
                     selectedValue = item["value"];
+                    Input.set(widget.id, selectedValue);
                     setState(() {});
                     if (widget.onChanged != null) {
                       widget.onChanged!(selectedValue!);
